@@ -1,4 +1,4 @@
-class TeachersController < ApplicationController
+class StudentsController < ApplicationController
   def new
     @placeholder_course = '186'
   end
@@ -7,7 +7,6 @@ class TeachersController < ApplicationController
     @full_name = params[:full_name]
     @course = params[:course_name]
     @grade_level = params[:grade_level]
-    # Hint: params??
     render 'show'
   end
 end
